@@ -1,0 +1,1 @@
+reprojected version (WGS-84) of the shapefile from: https://catalog.data.gov/dataset/500-cities-city-boundaries
