@@ -22,9 +22,6 @@ def main():
     bbox = [-130.2328,21.7423,-63.6722,52.8510] # continental USA bounding box
 
     shapefile_loc = './500cities_shapefiles/CityBoundaries_correct_CRS.shp' # location of 500 city shapefile
-    city_names = [ii.attributes['NAME'] for ii in shpreader.Reader(shapefile_loc).records()] # 500 city names
-    city_lats = [(ii.bounds[3]+ii.bounds[1])/2.0 for ii in shpreader.Reader(shapefile_loc).records()] # city lats
-    city_lons = [(ii.bounds[2]+ii.bounds[0])/2.0 for ii in shpreader.Reader(shapefile_loc).records()] # city lons
 
     fig = plt.figure(figsize=(12,9)) # set figure size
     ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree()) # set projection and subplot
