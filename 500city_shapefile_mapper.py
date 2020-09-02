@@ -5,7 +5,7 @@
 #
 # This code uses the shapefile from:
 # https://github.com/makerportal/geospatial-analyses/tree/master/500cities_shapefiles
-# and plots a given city (selected by the user)
+# and plots the 500 largest cities in the USA using cartopy
 #
 ################################################################
 #
