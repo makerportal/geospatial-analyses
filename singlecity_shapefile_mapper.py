@@ -57,7 +57,7 @@ def main():
     ax.add_feature(states_provinces, edgecolor='gray') # add province/state features
 
     if city_geom.type!='MultiPolygon':
-        city_geom = [city_geom]
+        city_geom = [city_geom] # this is a requirement for plotting features
         
     city_shapefiles = ShapelyFeature(city_geom,ccrs.PlateCarree(), facecolor='#3b3b3b') # get the geometries of the 500 cities
     ax.add_feature(city_shapefiles) # add 500 cities shapefiles to plot
