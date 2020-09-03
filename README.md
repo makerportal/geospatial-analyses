@@ -6,3 +6,6 @@ This folder contains codes that plot city shapefiles in Python using 'cartopy'
 This folder also contains codes that plot the national land cover database (NLCD) product across the USA and given cities
 
 These codes are the backbone of the satellite analyses
+
+## Geostationary Satellite
+This folder contains codes that plot geostationary satellite data (GOES-16/GOES-17)
