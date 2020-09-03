@@ -3,9 +3,10 @@
 # Author: Joshua Hrisko
 ################################################################
 #
-# This code uses the NLCD (https://www.mrlc.gov/data) and the
-# 500 city shapefile to plot the land cover data across a given
-# city at 30-m resolution (full-res) using cartopy
+# This code uses the NLCD (both imperviousness and general) data 
+# (https://www.mrlc.gov/data) and the 500 city shapefile to plot
+# the land cover data across a given city at 30-m resolution 
+# (full-res) using cartopy
 #
 ################################################################
 #
@@ -31,15 +32,37 @@ import cartopy.feature as cfeature
 #
 #
 def main(city_shapefile,city_name):
-    nlcd_dir = '/Volumes/MacOS Ext/nlcd/land_cover/' # local directory where NLCD folder is located
+#     nlcd_dir = '/Volumes/MacOS Ext/nlcd/imperviousness_descriptor/' # imperviousness directory
+    nlcd_dir = '/Volumes/MacOS Ext/nlcd/land_cover/' # NLCD landcover directory
     nlcd_files = [ii for ii in os.listdir(nlcd_dir) if ii[0]!='.']
     nlcd_filename = [ii for ii in nlcd_files if ii.endswith('.img')][0]
+    #######
+    # uncomment below for NLCD land cover
+    #######
     legend = np.array([0,11,12,21,22,23,24,31,41,42,43,51,52,71,72,73,74,81,82,90,95])
     leg_str = np.array(['No Data','Open Water','Perennial Ice/Snow','Developed, Open Space','Developed, Low Intensity',
            'Developed, Medium Intensity','Developed High Intensity','Barren Land (Rock/Sand/Clay)',
            'Deciduous Forest','Evergreen Forest','Mixed Forest','Dwarf Scrub','Shrub/Scrub',
            'Grassland/Herbaceous','Sedge/Herbaceous','Lichens','Moss','Pasture/Hay','Cultivated Crops',
            'Woody Wetlands','Emergent Herbaceous Wetlands'])
+    #######
+    # uncomment below for NLCD imperviousness
+    #######
+#     legend = np.array([0,1,2,3,4,5,6,7,8,9,10,11,12,127])
+#     leg_str = np.array(['No Data',
+#                     'Primary road in urban area : interstates and other major roads',
+#                    'Primary road outside urban area : interstates and other major roads',
+#                    'Secondary road in urban area : non-interstate highways',
+#                    'Secondary road outside urban area : non-interstate highways',
+#                    'Tertiary road in urban area : any two-lane road',
+#                    'Tertiary road outside urban area : any two-lane road',
+#                    'Thinned road in urban area',
+#                    'Thinned road outside urban area',
+#                    'Nonroad impervious surface in urban area',
+#                    'Nonroad impervious surface outside urban area',
+#                    'Energy production site in urban area',
+#                    'Energy production site outside urban area',
+#                    'NAN'])
     # colormap determination and setting bounds
     with rasterio.open(nlcd_dir+nlcd_filename) as r:
         try:
