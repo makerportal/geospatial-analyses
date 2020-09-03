@@ -9,3 +9,7 @@ These codes are the backbone of the satellite analyses
 
 ## Geostationary Satellite
 This folder contains codes that plot geostationary satellite data (GOES-16/GOES-17)
+
+For a full tutorial on geostationary geometries, see the following tutorial:
+
+https://makersportal.com/blog/2018/11/25/goes-r-satellite-latitude-and-longitude-grid-projection-algorithm
