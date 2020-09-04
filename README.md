@@ -9,6 +9,7 @@ These codes are the backbone of the satellite analyses
 
 *Examples*:
 
+![NLCD Map in NYC](./image_repository/NLCD_w_city_boundary_nyc.png)
 
 ## Geostationary Satellite
 This folder contains codes that plot geostationary satellite data (GOES-16/GOES-17)
