@@ -25,7 +25,7 @@ import numpy as np
 # Establishing GCP Connection
 ##############################
 #
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "GOOGLE_AUTH_CREDS_CUERG.json" # local google auth credentials
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "GOOGLE_AUTH_CREDS.json" # local google auth credentials
 client = storage.Client() # start the storage client
 bucket_16 = client.get_bucket('gcp-public-data-goes-16') # call the GOES-16/17 storage bucket
 
