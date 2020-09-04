@@ -11,7 +11,6 @@
 #
 ################################################################
 #
-import time
 import cartopy.io.shapereader as shpreader
 import cartopy.crs as ccrs
 from cartopy.io.shapereader import Reader
