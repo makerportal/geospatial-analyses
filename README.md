@@ -9,7 +9,6 @@ These codes are the backbone of the satellite analyses
 
 *Examples*:
 
-![GOES-16 Satellite LST Example](./image_repository/GOES16_LST_test.png)
 
 ## Geostationary Satellite
 This folder contains codes that plot geostationary satellite data (GOES-16/GOES-17)
@@ -17,3 +16,8 @@ This folder contains codes that plot geostationary satellite data (GOES-16/GOES-
 For a full tutorial on geostationary geometries, see the following tutorial:
 
 https://makersportal.com/blog/2018/11/25/goes-r-satellite-latitude-and-longitude-grid-projection-algorithm
+
+
+*Examples*:
+
+![GOES-16 Satellite LST Example](./image_repository/GOES16_LST_test.png)
