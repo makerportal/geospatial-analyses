@@ -24,7 +24,7 @@ def basemapper():
     ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree()) # add subplot with projection
     ax.set_extent([bbox[0],bbox[2],bbox[1],bbox[3]], crs=ccrs.PlateCarree()) # clip map to city boundaries
     gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
-                  linewidth=2, color='gray', alpha=0.5, linestyle='--') # draw gridlines
+                  linewidth=1.5, color='gray', alpha=0.5, linestyle='--') # draw gridlines
     gl.top_labels = False; gl.right_labels = False # format labels
     gl.xformatter = LONGITUDE_FORMATTER; gl.yformatter = LATITUDE_FORMATTER # format labels
     return fig,ax
@@ -65,6 +65,7 @@ def bldg_plotter():
     ax.add_feature(city_boundary_shp) # add city boundary
     shape_feature = ShapelyFeature(bldg_geoms,ccrs.PlateCarree(), facecolor='k') # create building shapes
     ax.add_feature(shape_feature) # add building shapes to map
+#     fig.savefig('nyc_building_footprint_financial_district.png',dpi=300,bbox_inches='tight')
     plt.show()
 
 if __name__ == '__main__':
