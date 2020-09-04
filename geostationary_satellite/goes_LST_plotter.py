@@ -108,4 +108,4 @@ if __name__ == '__main__':
     goes_vars = [ii for ii in netcdf_file.variables] # get variables from netcdf file
     data = data_grabber(netcdf_file) # grab the data
     bbox = [-130.2328,21.7423,-63.6722,52.8510] # bounding box for continental USA
-    geo_plotter()
+    geo_plotter() # plot the data
