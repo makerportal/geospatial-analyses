@@ -7,6 +7,8 @@ This folder also contains codes that plot the national land cover database (NLCD
 
 These codes are the backbone of the satellite analyses
 
+*Examples*:
+
 ## Geostationary Satellite
 This folder contains codes that plot geostationary satellite data (GOES-16/GOES-17)
 
