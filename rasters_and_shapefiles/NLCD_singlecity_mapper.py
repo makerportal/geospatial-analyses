@@ -78,9 +78,8 @@ def main(city_shapefile,city_name):
             raster_bbox = [int(np.min(raster_bbox_0)),int(np.min(raster_bbox_1)),int(np.max(raster_bbox_0)),int(np.max(raster_bbox_1))]
             nlcd = r.read(1, window=rasterio.windows.Window.from_slices((raster_bbox[0],raster_bbox[2]), (raster_bbox[1], raster_bbox[3])))
             nlcd = np.transpose(nlcd)
-            # lat/lon delineation 
-
-            # Or if you see an interesting feature and want to know the spatial coordinates:
+            
+            # lat/lon reprojection
             row,col = np.meshgrid(np.arange(raster_bbox[0],raster_bbox[2]),np.arange(raster_bbox[1],raster_bbox[3]))
             east, north = r.xy(row,col) # image --> spatial coordinates
             east = np.ravel(east); north = np.ravel(north)
@@ -144,6 +143,8 @@ def main(city_shapefile,city_name):
     leg_plt_save = ax2.legend(custom_lines, custom_strs,fontsize=12,ncol=2,loc='center')
     leg_plt_save.get_frame().set_facecolor('#EBEBEB') # color for legend
     leg_plt_save.set_bbox_to_anchor((0.48,-0.6)) # legend bbox
+    fig.savefig('NLCD_w_city_boundary_nyc.png',dpi=300,bbox_inches='tight')
+    plt.show()
 
 def city_shapefile_mapper():
     city_sel = input('Please Enter a City: ') # city to plot
