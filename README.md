@@ -34,3 +34,7 @@ This folder contains codes and data that process and visualize ground-based flux
 ## Web Scraping
 
 This folder contains codes that scrape geospatial data using different libraries in Python. 
+
+*Example*:
+
+![FTP Grab from ASOS Station CQT (Los Angeles)](./image_repository/ASOS_CQT_2020_plot.png)
