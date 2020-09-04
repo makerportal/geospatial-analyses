@@ -28,7 +28,7 @@ lambda_0 = netcdf_file.variables['goes_imager_projection'].longitude_of_projecti
 lat_0 =  netcdf_file.variables['goes_imager_projection'].latitude_of_projection_origin # latitude point of sat
 
 goes_proj = pyproj.Proj('+proj=geos +h={0:08.1f} +a= {1:08.1f} +b= {2:08.1f}'.format(h,r_eq,r_pol)+\
-                        ' +lon_0={0:08.1f} +lat_0={1:08.1f} +units=m +no_defs'.format(lambda_0,lat_0)) # GOES projection
+                        ' +lon_0={0:08.1f} +lat_0={1:08.1f} +units=m sweep=x +no_defs'.format(lambda_0,lat_0)) # GOES projection
 lonlat_proj = pyproj.Proj("EPSG:4326") # to lat/lon
 xs = h*netcdf_file.variables['x'][:] # x-vals from GOES
 ys = h*netcdf_file.variables['y'][:] # y-vals from GOES
@@ -37,4 +37,4 @@ tfmr = pyproj.transformer.Transformer.from_proj(goes_proj,lonlat_proj) # the pro
 lats,lons = tfmr.transform(rows,cols) # lat/lon values from projection
 lons[lons==np.inf] = np.nan # get rid of inf values (non-real)
 lats[lats==np.inf] = np.nan # get rid of in values (non-real)
-print('Are These the Correct NYC Coords? : ({0:2.5f}, {1:2.5f})'.format(lons[318,1849],lats[318,1849])) # test NYC coords
+print('Are These the Correct NYC Coords? : ({0:2.6f}, {1:2.5f})'.format(lons[318,1849],lats[318,1849])) # test NYC coords
