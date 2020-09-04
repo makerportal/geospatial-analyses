@@ -57,7 +57,7 @@ fig,axs = plt.subplots(2,1,figsize=(12,9)) # create figure
 ax = axs[0] # first subplot with raw data
 for ii,ind_ii in enumerate(var_indices):
     ax.scatter(x,var_data_array[ii],label=variable_names[ind_ii]) # plot the variables
-ax.set_xlabel('Timestamp [yyyy-mm-dd]',fontsize=16)
+ax.set_xlabel('Hour of Day',fontsize=16)
 ax.set_ylabel('Raw Flux [W$\cdot$m$^{-2}$]',fontsize=16)
 ax.legend(fontsize=16)
 # second subplot with diurnal averages
