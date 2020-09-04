@@ -27,4 +27,6 @@ https://makersportal.com/blog/2018/11/25/goes-r-satellite-latitude-and-longitude
 
 This folder contains codes and data that process and visualize ground-based flux data (sensible and latent heat fluxes, net radiation, etc.)
 
+
+#Example*:
 ![CCNY Flux Data Example](./image_repository/flux_diurnal_example.png)
