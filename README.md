@@ -42,3 +42,6 @@ This folder contains codes that scrape geospatial data using different libraries
 ## NYC Specific
 
 This folder uses New York City-specific analyses, particularly relating to its building footprints, ground station availibility, and numerical model comparisons.
+
+The NYC building footprint database is available for direct download via shapefile, here: https://data.cityofnewyork.us/api/geospatial/nqwf-w8eh?method=export&format=Shapefile
+
