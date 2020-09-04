@@ -45,3 +45,5 @@ This folder uses New York City-specific analyses, particularly relating to its b
 
 The NYC building footprint database is available for direct download here: https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh. Keep in mind that the total uncompressed shapefile is ~2.25GB!
 
+*Another Note on building footprints* - if plotting the footprints, make sure your RAM is at least 8GB, maybe more depending on the background apps running. Python will pull all the 2.25GB into memory.
+
