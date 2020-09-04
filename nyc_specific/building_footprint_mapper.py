@@ -5,7 +5,7 @@
 #
 # This code uses the building footprint file from:
 # https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh
-# and get information about building height and building roof
+# and gets information about building height and building roof
 # area. It plots the geometries of each building atop a map
 # of NYC
 #
