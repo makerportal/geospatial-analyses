@@ -7,7 +7,7 @@ This folder also contains codes that plot the national land cover database (NLCD
 
 These codes are the backbone of the satellite analyses
 
-*Examples*:
+*Example*:
 
 ![NLCD Map in NYC](./image_repository/NLCD_w_city_boundary_nyc.png)
 
@@ -19,6 +19,10 @@ For a full tutorial on geostationary geometries, see the following tutorial:
 https://makersportal.com/blog/2018/11/25/goes-r-satellite-latitude-and-longitude-grid-projection-algorithm
 
 
-*Examples*:
+*Example*:
 
 ![GOES-16 Satellite LST Example](./image_repository/GOES16_LST_test.png)
+
+## Surface Flux Stations
+
+This folder contains codes and data that process and visualize ground-based flux data (sensible and latent heat fluxes, net radiation, etc.)
