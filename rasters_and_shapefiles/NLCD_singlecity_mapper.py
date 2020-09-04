@@ -76,7 +76,7 @@ def main(city_shapefile,city_name):
                             r.index(tfm_geo_to_img.transform(bbox[1],bbox[2])[0],tfm_geo_to_img.transform(bbox[1],bbox[2])[1])[1],
                              r.index(tfm_geo_to_img.transform(bbox[3],bbox[2])[0],tfm_geo_to_img.transform(bbox[3],bbox[2])[1])[1]]
             raster_bbox = [int(np.min(raster_bbox_0)),int(np.min(raster_bbox_1)),int(np.max(raster_bbox_0)),int(np.max(raster_bbox_1))]
-            nlcd = r.read(1, window=Window.from_slices((raster_bbox[0],raster_bbox[2]), (raster_bbox[1], raster_bbox[3])))
+            nlcd = r.read(1, window=rasterio.windows.Window.from_slices((raster_bbox[0],raster_bbox[2]), (raster_bbox[1], raster_bbox[3])))
             nlcd = np.transpose(nlcd)
             # lat/lon delineation 
 
