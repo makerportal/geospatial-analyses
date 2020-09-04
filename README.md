@@ -30,3 +30,7 @@ This folder contains codes and data that process and visualize ground-based flux
 
 *Example*:
 ![CCNY Flux Data Example](./image_repository/flux_diurnal_example.png)
+
+## Web Scraping Geospatial Data
+
+This folder contains codes that scrape data using different libraries in Python. 
