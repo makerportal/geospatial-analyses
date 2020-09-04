@@ -29,7 +29,7 @@ This folder contains codes and data that process and visualize ground-based flux
 
 
 *Example*:
-![CCNY Flux Data Example](./image_repository/ccny_flux_diurnal_example.png)
+![CCNY Flux Data Example](./image_repository/FTP_ASOS_plot.png)
 
 ## Web Scraping
 
