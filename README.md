@@ -49,4 +49,4 @@ The NYC building footprint database is available for direct download here: https
 
 *Example*:
 
-![NYC Building Footprints Manhattan](./image_repository/nyc_building_footprint_financial_district.png)
+![NYC Building Footprints Manhattan](./image_repository/nyc_building_footprint_zoom.png)
