@@ -60,7 +60,7 @@ def bldg_grabber():
     return bldg_lons,bldg_lats,bldg_geoms,bldg_heights,bldg_areas
 def bldg_plotter():
     fig,ax = basemapper() # create spatial map
-    city_boundary_shp = ShapelyFeature(shpreader.Reader('../../QGIS/500Cities_City_11082016/CityBoundariescorrect_CRS_correct_CRS.shp').geometries(),
+    city_boundary_shp = ShapelyFeature(shpreader.Reader('./500Cities_City_11082016/CityBoundariescorrect_CRS_correct_CRS.shp').geometries(),
                                     ccrs.PlateCarree(), facecolor='#ECECEC',edgecolor='k') # load city boundaries
     ax.add_feature(city_boundary_shp) # add city boundary
     shape_feature = ShapelyFeature(bldg_geoms,ccrs.PlateCarree(), facecolor='k') # create building shapes
@@ -69,7 +69,7 @@ def bldg_plotter():
     plt.show()
 
 if __name__ == '__main__':
-    shpfilename = '../../QGIS/nyc_footprints/geo_export_ac6032f8-bdaa-4192-9feb-0918d9415df3.shp' # local building footprint file
+    shpfilename = './nyc_footprints/geo_export_ac6032f8-bdaa-4192-9feb-0918d9415df3.shp' # local building footprint file
     bldg_lons,bldg_lats,bldg_geoms,bldg_heights,bldg_areas = bldg_grabber() # grab building info from footprint shapefile
     bbox = [np.min(bldg_lons),np.min(bldg_lats),np.max(bldg_lons),np.max(bldg_lats)] # bounding box of buildings
     bldg_plotter() # plot building footprints
