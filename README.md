@@ -37,4 +37,4 @@ This folder contains codes that scrape geospatial data using different libraries
 
 *Example*:
 
-![FTP Grab from ASOS Station CQT (Los Angeles)](./image_repository/ASOS_CQT_2020_plot.png)
+![FTP Grab from ASOS Station CQT (Los Angeles)](./image_repository/FTP_ASOS_plot.png)
