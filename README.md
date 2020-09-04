@@ -38,3 +38,7 @@ This folder contains codes that scrape geospatial data using different libraries
 *Example*:
 
 ![FTP Grab from ASOS Station CQT (Los Angeles)](./image_repository/FTP_ASOS_plot.png)
+
+## NYC Specific
+
+This folder uses New York City-specific analyses, particularly relating to its building footprints, ground station availibility, and numerical model comparisons.
