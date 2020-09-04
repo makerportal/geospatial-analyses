@@ -47,3 +47,6 @@ The NYC building footprint database is available for direct download here: https
 
 *Another Note on building footprints* - if plotting the footprints, make sure your RAM is at least 8GB, maybe more depending on the background apps running. Python will pull all the 2.25GB into memory.
 
+*Example*:
+
+![NYC Building Footprints Manhattan](./image_repository/nyc_building_footprint_financial_district.png)
