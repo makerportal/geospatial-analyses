@@ -50,3 +50,7 @@ The NYC building footprint database is available for direct download here: https
 *Example*:
 
 ![NYC Building Footprints Manhattan](./image_repository/nyc_building_footprint_zoom.png)
+
+## WRF
+
+This folder contains information on reading data from the Weather Research and Forecasting (WRF) model
