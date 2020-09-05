@@ -122,7 +122,7 @@ plt.show()
 
 fig2,ax2 = plt.subplots(figsize=(14,8)) # start figure
 p1 = ax2.contourf(local_t_vec,H_vert[0],np.transpose(U_vert), 20, cmap='hot')
-ax2.set_xlabel('Time [yyyy-mm-dd]',fontsize=16)
+ax2.set_xlabel('Date in {} [mm-dd-HH]'.format(local_t_vec[0].year),fontsize=16)
 ax2.set_ylabel('Height [m]',fontsize=16)
 cbar = fig2.colorbar(p1)
 cbar.set_label('Horizontal Velocity. U [m$\cdot$s$^{-1}$]',fontsize=16)
