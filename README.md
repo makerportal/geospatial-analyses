@@ -43,7 +43,7 @@ This folder contains codes that scrape geospatial data using different libraries
 
 This folder uses New York City-specific analyses, particularly relating to its building footprints, ground station availibility, and numerical model comparisons.
 
-The NYC building footprint database is available for direct download here: https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh. Keep in mind that the total uncompressed shapefile is ~2.25GB!
+The NYC building footprint database is available for direct download here: https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh. Keep in mind that the total uncompressed shapefile is ~2.25GB! Read the full description of building properties and how they collect building data, here: https://github.com/CityOfNewYork/nyc-geo-metadata/blob/master/Metadata/Metadata_BuildingFootprints.md
 
 *Another Note on building footprints* - if plotting the footprints, make sure your RAM is at least 8GB, maybe more depending on the background apps running. Python will pull all the 2.25GB into memory.
 
