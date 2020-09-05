@@ -59,4 +59,4 @@ uWRF (urban weather research and forecasting) data can be found on the coastal u
 
 *Example*:
 
-![WRF Vertical Profile Example](./image_repository/horiz_velocity_w_height_WRF.png)
+![WRF Vertical Profile Example](./image_repository/WRF_horiz_velocity_w_height.png)
