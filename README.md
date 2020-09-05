@@ -56,3 +56,7 @@ The NYC building footprint database is available for direct download here: https
 This folder contains information on reading data from the Weather Research and Forecasting (WRF) model
 
 uWRF (urban weather research and forecasting) data can be found on the coastal urban environmental research group's (CUERG) website (CCNY-related) at this link: https://cuerg.ccny.cuny.edu/new-york-forecast/
+
+*Example*:
+
+![WRF Vertical Profile Example](./image_repository/horiz_velocity_w_height_WRF.png)
